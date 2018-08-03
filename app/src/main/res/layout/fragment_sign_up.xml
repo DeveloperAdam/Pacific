@@ -1,0 +1,180 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="@color/darkBlue"
+    tools:context="com.techease.pacific.Fragments.SignUpFragment">
+
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="20sp"
+    >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginTop="50sp"
+            android:background="@color/colorBlue"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sign Up"
+                android:textSize="20sp"
+                android:textColor="#fff"
+                android:textStyle="italic|bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="60sp"
+                android:layout_marginBottom="10sp"/>
+     <ScrollView
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <EditText
+                android:id="@+id/etEmailSignUp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:hint="Enter your Email"
+                android:paddingLeft="10sp"
+                android:textColor="#fff"
+                android:textColorHint="#fff"
+                android:inputType="textEmailAddress"
+                android:layout_marginTop="30sp"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:textStyle="italic"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <EditText
+                android:id="@+id/etFname"
+                android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:hint="First Name"
+                    android:textColor="#fff"
+                android:paddingLeft="10sp"
+                android:textColorHint="#fff"
+                    android:inputType="textEmailAddress"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:textStyle="italic"
+                />
+                <EditText
+                    android:id="@+id/etLname"
+                    android:layout_width="0sp"
+                    android:layout_weight="0.5"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="#fff"
+                    android:hint="Last Name"
+                    android:textColor="#fff"
+                    android:paddingLeft="10sp"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#fff"
+                    android:layout_marginLeft="10sp"
+                    android:layout_marginRight="10sp"
+                    android:textStyle="italic"
+                    />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/etSetPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:hint="Set Password"
+                android:paddingLeft="10sp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:textStyle="italic"
+                />
+            <EditText
+                android:id="@+id/etConfirmPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#fff"
+                android:hint="Confirm Password"
+                android:paddingLeft="10sp"
+                android:textColorHint="#fff"
+                android:textColor="#fff"
+                android:inputType="textPassword"
+                android:layout_marginLeft="10sp"
+                android:layout_marginRight="10sp"
+                android:textStyle="italic"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30sp"
+                android:id="@+id/txtLogin"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="italic"
+                    android:text="Already have an account "/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Login"
+                    android:textStyle="bold|italic"
+                    android:textColor="#fff"
+                    android:textSize="17sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:textStyle="italic"
+                    android:text=" here."/>
+            </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnSignup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30sp"
+                    android:background="@drawable/white_btn"
+                    android:text="Signup"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:layout_marginRight="20sp"
+                    android:layout_marginTop="40sp"
+                    android:layout_marginBottom="10sp"
+                    android:textSize="15sp"
+                    android:textColor="@color/darkBlue"/>
+
+
+        </LinearLayout>
+     </ScrollView>
+        </LinearLayout>
+        </ScrollView>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/logo"
+        android:layout_gravity="center|top"
+        app:civ_border_width="5dp"
+        app:civ_border_color="@color/darkBlue"/>
+</FrameLayout>
+</LinearLayout>

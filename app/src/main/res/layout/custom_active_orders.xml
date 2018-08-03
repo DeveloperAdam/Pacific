@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp"
+    android:orientation="horizontal">
+    <TextView
+        android:id="@+id/tvOrderNo"
+        android:layout_width="0sp"
+        android:layout_weight="0.8"
+        android:layout_height="wrap_content"
+        android:text="Order#"
+      />
+    <TextView
+        android:id="@+id/tvUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="17sp"
+        android:textColor="#000"
+        android:text="User"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/tvOrderNoActiveOrder"
+            android:layout_width="0sp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="Order No"
+            android:textSize="17sp"
+            android:layout_marginLeft="10sp"
+            android:textColor="@color/colorPrimary"
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ivUploadImageActiveOrder"
+            android:layout_marginRight="20sp"
+            android:orientation="vertical">
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/ivActiveOrders"
+            android:layout_width="40sp"
+            android:layout_height="40sp"
+            android:layout_gravity="center"
+            android:src="@drawable/camera"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimary"
+                android:text="Upload Pic"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Details:"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:textColor="#000"
+        android:layout_marginLeft="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="10sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="Work days left"/>
+
+        <TextView
+            android:id="@+id/tvDaysLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="Arived Date"/>
+        <TextView
+            android:id="@+id/tvArivedDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2/4/2521"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0sp"
+            android:layout_weight="0.8"
+            android:layout_height="wrap_content"
+            android:text="Ship Date"/>
+        <TextView
+            android:id="@+id/tvShipDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2/4/2018"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10sp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.6"
+            android:text="Notes Production" />
+
+        <TextView
+            android:id="@+id/tvNotesProduction"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3"
+            android:ellipsize="end"
+            android:gravity="right"
+            android:maxLines="1"
+            android:layout_marginRight="5sp"
+            android:text="Write here" />
+
+        <ImageView
+            android:id="@+id/ivEdit"
+            android:layout_width="0sp"
+            android:layout_height="25sp"
+            android:layout_weight="0.1"
+            android:src="@drawable/pencil" />
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvShowImageActive"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Image"
+        android:layout_gravity="right"
+        android:layout_marginRight="10sp"
+        android:layout_marginTop="10sp"
+        android:textSize="17sp"/>
+    <Button
+        android:id="@+id/btnReadToShip"
+        android:layout_width="120sp"
+        android:layout_height="40sp"
+        android:layout_marginTop="20sp"
+        android:layout_gravity="center"
+        android:background="@drawable/blue_roundbtn"
+        android:textColor="#fff"
+        android:text="Ready to ship"/>
+<View
+    android:layout_width="match_parent"
+    android:layout_marginLeft="10sp"
+    android:layout_marginRight="10sp"
+    android:layout_marginTop="20sp"
+    android:layout_height="2sp"
+    android:layout_marginBottom="10sp"
+    android:background="#BDBDBD"/>
+</LinearLayout>

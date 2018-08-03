@@ -1,0 +1,114 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#BDBDBD"
+    tools:context="com.techease.pacific.Fragments.SettingFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100sp"
+        android:layout_marginTop="50sp"
+        android:orientation="vertical"
+        android:background="#fff">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/settng"
+            android:layout_gravity="center"
+            android:layout_marginTop="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_gravity="center"
+            android:textColor="@color/darkBlue"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_outer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        card_view:cardBackgroundColor="@android:color/transparent"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="3dp" >
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view_inner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="3dp"
+        android:layout_margin="10sp"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="0dp" >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Update Password"
+         android:textColor="#000"
+         android:textSize="17sp"
+         android:textStyle="bold"
+         android:layout_margin="20sp"
+         />
+
+            <EditText
+                android:id="@+id/etCurrentPass"
+                android:layout_width="250sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50sp"
+                android:inputType="text"
+                android:background="@drawable/etback"
+                android:hint="Enter Current Password"
+                android:paddingLeft="10sp" />
+            <EditText
+                android:id="@+id/etNewPass"
+                android:layout_width="250sp"
+                android:layout_height="40sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:inputType="text"
+                android:paddingLeft="10sp"
+                android:hint="Enter New Password"
+                android:background="@drawable/etback"/>
+            <EditText
+                android:id="@+id/etConfirmPassNewPass"
+                android:layout_width="250sp"
+                android:layout_height="40sp"
+                android:layout_marginTop="20sp"
+                android:inputType="text"
+                android:paddingLeft="10sp"
+                android:layout_gravity="center"
+                android:hint="Confirm New Password"
+                android:background="@drawable/etback"/>
+
+            <Button
+                android:id="@+id/btnUpdatePass"
+                android:layout_width="100sp"
+                android:layout_height="40sp"
+                android:text="Update"
+                android:layout_gravity="center"
+                android:layout_marginTop="50sp"
+                android:textColor="#fff"
+                android:background="@drawable/blue_roundbtn"
+                />
+        </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
